@@ -1582,7 +1582,7 @@ class RubiksVideo(RubiksOpenCV):
 
         return True
 
-    def analyze_webcam(self, width=352, height=240):
+    def analyze_webcam(self, width=1920, height=1080):
         self.video_reset(True)
         window_width = width * 2
         window_height = height * 2
@@ -1770,3 +1770,4 @@ class RubiksVideo(RubiksOpenCV):
 
         capture.release()
         cv2.destroyWindow("Fig")
+        return kociemba_string

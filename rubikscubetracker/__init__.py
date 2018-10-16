@@ -1582,7 +1582,7 @@ class RubiksVideo(RubiksOpenCV):
 
         return True
 
-    def analyze_webcam(self, width=640, height=360):
+    def analyze_webcam(self, width=352, height=288):
         self.video_reset(True)
         window_width = width * 2
         window_height = height * 2
